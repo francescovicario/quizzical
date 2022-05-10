@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  color: #293264;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.game-title {
+  font-family: "Karla", sans-serif;
+  font-size: 31.25px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.game-descr {
+  font-weight: 400;
+  text-align: center;
+}
+
+.game-start-btn,
+.quiz__button {
+  background: #4d5b9e;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #f5f7fb;
+  border: none;
+  padding: 1em 2.5em;
+  margin-top: 1em;
+}
+
+.quiz__question-wrapper {
+  border: 1px solid magenta;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.quiz__question {
+  font-family: 'Karla', sans-serif;
+  text-align: left;
+}
+
+.quiz__answer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid maroon;
+}
+
+.quiz__answer {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  padding: .65em 1.9em;
+  margin-right: 2em;
+  border-radius: 10px;
+}
+
+.quiz__answer:hover {
+  border: none;
+  background-color: #D6DBF5;
+}
