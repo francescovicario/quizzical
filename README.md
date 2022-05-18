@@ -1,9 +1,9 @@
 # Quizzical
 
 <div align='center'> 
-![](./public/images/demo.gif)
+![](public/images/demo.gif)
 
-[DEMO](#)</div>
+[DEMO](https://francescovicario.github.io/quizzical/)</div>
 
 Piccolo gioco quiz che ho fatto con React. Alla partenza del gioco vengono mostrate 5 domande a risposta multipla, in base al numero di domande corrette si ottiene un punteggio finale che può andare da 0 a 5.
 
