@@ -17,17 +17,22 @@ body {
   font-weight: 700;
 }
 
+button {
+  cursor: pointer;
+}
+
 .game-title {
   font-family: "Karla", sans-serif;
   font-size: 31.25px;
   line-height: 37px;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .game-descr {
   font-weight: 400;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .game-start-btn,
@@ -40,13 +45,16 @@ body {
   color: #f5f7fb;
   border: none;
   padding: 1em 2.5em;
-  margin-top: 1em;
 }
 
 .quiz__question-wrapper {
-  border: 1px solid magenta;
   margin: 0 auto;
   width: 75%;
+}
+
+.quiz__single-question-wrapper {
+  padding-bottom: 1.5em;
+  border-bottom: 0.794239px solid #DBDEF0;
 }
 
 .quiz__question {
@@ -59,7 +67,6 @@ body {
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  border: 1px solid maroon;
 }
 
 .quiz__answer {
@@ -70,9 +77,90 @@ body {
   padding: .65em 1.9em;
   margin-right: 2em;
   border-radius: 10px;
+  border: 0.771045px solid #4D5B9E;
+  height: 100%;
 }
 
-.quiz__answer:hover {
-  border: none;
+.quiz__answer:hover,
+.quiz__selected-answer {
+  border: 0.771045px solid #D6DBF5;
   background-color: #D6DBF5;
+}
+
+.quiz__correct-answer{
+  border: 0.771045px solid #94D7A2;
+  background: #94D7A2;
+  pointer-events: none;
+}
+
+.quiz__wrong-answer {
+  border: 0.771045px solid #F8BCBC;
+  background: #F8BCBC;
+  opacity: 50%;
+  pointer-events: none;
+}
+
+.quiz__excluded-answer {
+  opacity: 50%;
+  pointer-events: none;
+}
+
+.quiz__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 1.5em;
+}
+
+.quiz__button {
+  margin-left: 10em;
+}
+
+@media screen and (max-width: 600px) {
+
+  .quiz__answer-wrapper,
+  .quiz__button-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quiz__question-wrapper {
+    height: 100vh;
+    margin-top: 2em;
+  }
+
+  button,
+  .quiz__score-messages {
+    width: 100%;
+  }
+
+  button {
+    margin: 1em 0;
+  }
+
+  .quiz__button {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .quiz__question-wrapper {
+    height: 100vh;
+    margin-top: 2em;
+  }
+
+  .quiz__button-wrapper {
+    margin-bottom: 10em;
+  }
+}
+
+@media screen and (max-height: 720px){
+  .quiz__question-wrapper {
+    height: 100vh;
+    padding: 3em auto;
+  }
+
+  .quiz__button-wrapper {
+    margin-bottom: 1em;
+  }
 }
